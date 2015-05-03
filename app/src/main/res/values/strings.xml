@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Troncs</string>
+    <string name="title_section1">Llista</string>
+    <string name="title_section2">Torre</string>
+    <string name="title_section3">Tres</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Paràmetres</string>
+    <string name="title_section4">Quatre</string>
+    <string name="lblNom">Nom</string>
+    <string name="lblPosicio">Posició</string>
+    <string name="escullPosicio">Escull la posició</string>
+    <string name="lblEspatlla">Espatlla(cm)</string>
+    <string name="lblAfegeix">Afegeix/Act.</string>
+    <string name="lblTroba">Troba</string>
+    <string name="lblEsborra">Esborra</string>
+    <string name="resultats">Resultats</string>
+    <string name="valorNom">Nom...</string>
+    <string name="torreEnx">Enxaneta</string>
+    <string name="torreAco">Acotxador</string>
+    <string name="Next">Següent</string>
+    <string name="Previous">Previ</string>
+    <string name="Camera">Camera</string>
+    <string name="Rengla">Rengla(A)</string>
+    <string name="Plena">Plena(B)</string>
+    <string name="Buida">Buida(C)</string>
+    <string name="nomCastell">Nom del Castell...</string>
+
+    <string-array name="Castells">
+        <item>Castellers</item>
+        <item>Dost-Torre</item>
+        <item>Tres</item>
+        <item>Quatre</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lblNom"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+            </TextView>
+
+        <EditText
+            android:id="@+id/entNom"
+            android:background="@color/colorPrimaryLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:text="@string/valorNom" >
+
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lblPosicio"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/CmbPosicions"
+            android:background="@color/colorPrimaryLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/posicions"
+            android:layout_weight="1"
+            android:prompt="@string/escullPosicio" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lblEspatlla"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/entEspatlla"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@color/colorPrimaryLight"
+            android:maxLength="3"
+            android:hint=""
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <Button
+            android:id="@+id/butAfegeix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblAfegeix" />
+
+        <Button
+            android:id="@+id/butEsborra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblEsborra" />
+        <Button
+            android:id="@+id/butRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresca"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

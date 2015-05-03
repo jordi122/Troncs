@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="posicions">
+        <item>Baixos</item>
+        <item>Segons</item>
+        <item>Terços</item>
+        <item>Quarts</item>
+        <item>Quints</item>
+    </string-array>
+</resources>
