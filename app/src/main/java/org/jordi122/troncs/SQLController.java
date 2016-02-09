@@ -245,6 +245,7 @@ public class SQLController {
     }
 
     public boolean isTableExists(String tableName) {
+
         Cursor cursor = database.rawQuery("select DISTINCT tbl_name from sqlite_master where tbl_name = '" + tableName + "'", null);
         if (cursor != null) {
             if (cursor.getCount() > 0) {

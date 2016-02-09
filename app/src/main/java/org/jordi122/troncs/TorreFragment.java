@@ -454,8 +454,8 @@ public class TorreFragment extends Fragment {
     private void addCastell() {
         final List<String> castellersArray = new ArrayList<String>();
         final String nomCas = nomCastell.getText().toString();
-        final String NomDB = sqlcon.getNomDB("torre");
         sqlcon.open();
+        final String NomDB = sqlcon.getNomDB("torre");
         castellersArray.add("spib1");castellersArray.add(spib1.getSelectedItem().toString());
         castellersArray.add("spib2");castellersArray.add(spib2.getSelectedItem().toString());
         castellersArray.add("spis1");castellersArray.add(spis1.getSelectedItem().toString());

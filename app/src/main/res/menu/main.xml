@@ -22,7 +22,10 @@
         android:icon="@drawable/ic_camera_alt_white_48dp"
         android:orderInCategory="200"
         app:showAsAction="always"/>
-    <item android:id="@+id/action_example" android:title="Copy database"
+    <item android:id="@+id/copyDB" android:title="Copia la BBDD"
+        app:showAsAction="never"
+        android:orderInCategory="500"/>
+    <item android:id="@+id/importDB" android:title="Restaura la BBDD"
         app:showAsAction="never"
         android:orderInCategory="500"/>
 

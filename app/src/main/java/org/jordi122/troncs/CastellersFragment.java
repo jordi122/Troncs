@@ -65,15 +65,6 @@ public class CastellersFragment extends Fragment implements TextWatcher {
                 new MyAsync().execute("add");
                 Toast myToast = Toast.makeText(getActivity(), "Insertat/Actualitzat " + nom_et.getText() + " amb alçada " + espatlla_et.getText() + " a la posicó de " + posicio_sp.getSelectedItem().toString(), Toast.LENGTH_LONG );
                 myToast.show();
-                /*Handler handler = new Handler();
-                handler.postDelayed(new Runnable()
-                {
-                    @Override
-                    public void run()
-                    {
-                        BuildTable();
-                    }
-                }, 500);*/
             }
         });
 
@@ -85,16 +76,6 @@ public class CastellersFragment extends Fragment implements TextWatcher {
                 new MyAsync().execute("delete");
                 Toast myToast = Toast.makeText(getActivity(), "Esborrat " + nom_et.getText().toString() + " a " + posicio_sp.getSelectedItem().toString(), Toast.LENGTH_LONG );
                 myToast.show();
-                /*Handler handler = new Handler();
-                handler.postDelayed(new Runnable()
-                {
-                    @Override
-                    public void run()
-                    {
-                        BuildTable();
-                    }
-                }, 500);*/
-
             }
         });
         ref_btn.setOnClickListener(new OnClickListener() {

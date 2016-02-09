@@ -87,7 +87,7 @@ public class MainActivity extends ActionBarActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_example) {
+        if (id == R.id.copyDB) {
             File originalDB = this.getDatabasePath("castellers.db");
             File copyDB = new File(android.os.Environment.getExternalStorageDirectory()+"/castellers.db");
             try {
@@ -98,6 +98,18 @@ public class MainActivity extends ActionBarActivity
             }
             return true;
         }
+        if (id == R.id.importDB) {
+            File originalDB = this.getDatabasePath("castellers.db");
+            File copyDB = new File(android.os.Environment.getExternalStorageDirectory()+"/castellers.db");
+            try {
+                copyDatabase(copyDB,originalDB);
+                Toast.makeText(this,copyDB.getAbsolutePath().toString(),Toast.LENGTH_LONG).show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return true;
+        }
+
         if (id == R.id.menu_left) {
             Log.d("Debug","mNavigationDrawerFragment.mCurrentSelectedPosition: " + String.valueOf(mNavigationDrawerFragment.mCurrentSelectedPosition));
             onNavigationDrawerItemSelected(posicioNova(mNavigationDrawerFragment.mCurrentSelectedPosition,false));
